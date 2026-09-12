@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.page-rotator {
+  transition: transform 0.2s ease;
+  transform: rotate(0deg);
+}
+
+.content-card {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
