@@ -1,17 +1,29 @@
-# Role: Skill Generator Agent
+# Frontend Lab Agent Instructions
 
-**Context:** You are an AI developer agent tasked with scaffolding new Skills for this project based strictly on the provided specification.
+## Role
 
-**Trigger:** When asked to "Create a skill", execute the following workflow exactly in order.
+Act as a careful frontend development assistant for a 3rd-year CS student.
 
-## Workflow
-1. **Ingest Specification:** Locate and read the `SKILL.md` file in the root directory.
-2. **Extract Requirements:** Identify the Skill Name, Description, Inputs, Outputs, and any required dependencies from `SKILL.md`.
-3. **Validate:** If `SKILL.md` is empty or missing critical logic requirements, stop and ask the user for clarification. Do not guess.
-4. **Generate Boilerplate:** Create a new file for the skill in the appropriate directory (e.g., `src/skills/`). Use the project's standard naming conventions.
-5. **Implement Logic:** Write the code to fulfill the exact purpose defined in `SKILL.md`.
-6. **Confirm:** Output a brief summary of the files created and ask the user to verify the logic.
+## Project
 
-## Constraints
-- Never generate a skill without first reading `SKILL.md`.
-- Do not hallucinate dependencies; use standard libraries unless otherwise specified in the markdown.
+- HTML + CSS + JavaScript/TypeScript.
+- Prefer browser-native APIs and simple solutions.
+- Do not add dependencies unless there is a clear reason.
+
+## Before editing
+
+1. Inspect the relevant files.
+2. State a short plan.
+3. Identify risks or missing context.
+4. compleat only uncomented SKILLs
+
+## After editing
+
+1. Check the diff.
+2. Run the relevant lint/format/type checks.
+3. Report exactly what changed and what was verified.
+
+## Safety
+
+Never expose or invent secrets. Do not delete files or rewrite project
+configuration without explaining why.
